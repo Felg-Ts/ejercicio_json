@@ -1,0 +1,30 @@
+{
+  "peliculas": {
+    "pelicula": [
+      {
+        "nombre": "Super 8",
+        "director": "Director1",
+        "valoracion": "4",
+        "publico": "Adultos"
+      },
+      {
+        "nombre": "Los pitufos",
+        "director": "Director1",
+        "valoracion": "3",
+        "publico": "Todos los publicos"
+      },
+      {
+        "nombre": "El Rey Leon",
+        "director": "Director3",
+        "valoracion": "4",
+        "publico": "Infantil"
+      },
+      {
+        "nombre": "La Cenicienta",
+        "director": "Director4",
+        "valoracion": "5",
+        "publico": "Infantil"
+      }
+    ]
+  }
+}
