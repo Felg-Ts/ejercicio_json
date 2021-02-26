@@ -1,6 +1,6 @@
 # ejercicio_json
 
-# Enunciados
+###### Enunciados
 
 1. Listar información: Lista los nombres y títulos de los champions.
 
