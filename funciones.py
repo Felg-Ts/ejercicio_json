@@ -24,3 +24,33 @@ def countinfo(chfile):
     print("Presione una tecla para continuar...")
     msvcrt.getch()
     os.system('cls')
+
+def searhinfo(chfile):
+
+    print('''
+    1-mage
+    2-support
+    3-ranged
+    4-recomended
+    5-carry
+    6-melle
+    ''')
+
+    ctags = input("Introduce el nombre de una tag: ")
+
+    if ctags == '1':
+        print('Los champions que contienen la tag mage son:' ,chfile['Champion'][0]['name'])
+    elif ctags == '2':
+        print('Los champions que contienen la tag support son:' ,chfile['Champion'][0]['name'] ,chfile['Champion'][1]['name'])
+    elif ctags == '3':
+        print('Los champions que contienen la tag ranged son:' ,chfile['Champion'][0]['name'] ,chfile['Champion'][1]['name'] )
+    elif ctags == '4':
+        print('Los champions que contienen la tag recomended son:' ,chfile['Champion'][1]['name'] ,chfile['Champion'][2]['name'])
+    elif ctags == '5':
+        print('Los champions que contienen la tag carry son:' ,chfile['Champion'][2]['name'])
+    elif ctags == '6':
+        print('Los champions que contienen la tag melee son:' ,chfile['Champion'][2]['name'])
+    
+    print("Presione una tecla para continuar...")
+    msvcrt.getch()
+    os.system('cls')
