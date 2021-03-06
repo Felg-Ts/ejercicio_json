@@ -104,3 +104,94 @@ def searhinfore(chfile):
     print("Presione una tecla para continuar...")
     msvcrt.getch()
     os.system('cls')
+
+def searhichamabil(chfile):
+
+    print('''
+    1-Lux
+    2-Soraka
+    3-MasterYi
+    ''')
+
+    nchamp = input("Introduce el nombre de un champion: ")
+
+
+    #habilidades Lux
+
+    if nchamp == (chfile['Champion'][0]['name']):
+
+        print('''
+        1-Illumination
+        2-Light Binding
+        3-Prismatic Barrier
+        4-Lucent Singularity
+        5-Final Spark
+        ''')
+
+        abiln = input("Introduce el nombre de una habilidad de Lux para ver su descripción: ")
+
+        if abiln == (chfile['Champion'][0]['abilities']['Ability'][0]['name']):
+            print(chfile['Champion'][0]['abilities']['Ability'][0]['description'])
+        elif abiln == (chfile['Champion'][0]['abilities']['Ability'][1]['name']):
+            print(chfile['Champion'][0]['abilities']['Ability'][1]['description'])
+        elif abiln == (chfile['Champion'][0]['abilities']['Ability'][2]['name']):
+            print(chfile['Champion'][0]['abilities']['Ability'][2]['description'])
+        elif abiln == (chfile['Champion'][0]['abilities']['Ability'][3]['name']):
+            print(chfile['Champion'][0]['abilities']['Ability'][3]['description'])
+        elif abiln == (chfile['Champion'][0]['abilities']['Ability'][4]['name']):
+            print(chfile['Champion'][0]['abilities']['Ability'][4]['description'])
+
+    #habilidades Soraka
+
+    elif nchamp == (chfile['Champion'][1]['name']):
+
+        print('''
+        1-Consecration
+        2-Starcall
+        3-Astral Blessing
+        4-Infuse
+        5-Wish
+        ''')
+
+        abiln = input("Introduce el nombre de una habilidad de Soraka para ver su descripción: ")
+
+        if abiln == (chfile['Champion'][1]['abilities']['Ability'][0]['name']):
+            print(chfile['Champion'][1]['abilities']['Ability'][0]['description'])
+        elif abiln == (chfile['Champion'][1]['abilities']['Ability'][1]['name']):
+            print(chfile['Champion'][1]['abilities']['Ability'][1]['description'])
+        elif abiln == (chfile['Champion'][1]['abilities']['Ability'][2]['name']):
+            print(chfile['Champion'][1]['abilities']['Ability'][2]['description'])
+        elif abiln == (chfile['Champion'][1]['abilities']['Ability'][3]['name']):
+            print(chfile['Champion'][1]['abilities']['Ability'][3]['description'])
+        elif abiln == (chfile['Champion'][1]['abilities']['Ability'][4]['name']):
+            print(chfile['Champion'][1]['abilities']['Ability'][4]['description'])
+
+
+    #habilidades MasterYi
+
+    elif nchamp == (chfile['Champion'][2]['name']):
+
+        print('''
+        1-Double Strike
+        2-Alpha Strike
+        3-Meditate
+        4-Wuju Style
+        5-Highlander
+        ''')
+
+        abiln = input("Introduce el nombre de una habilidad de Soraka para ver su descripción: ")
+
+        if abiln == (chfile['Champion'][2]['abilities']['Ability'][0]['name']):
+            print(chfile['Champion'][2]['abilities']['Ability'][0]['description'])
+        elif abiln == (chfile['Champion'][2]['abilities']['Ability'][1]['name']):
+            print(chfile['Champion'][2]['abilities']['Ability'][1]['description'])
+        elif abiln == (chfile['Champion'][2]['abilities']['Ability'][2]['name']):
+            print(chfile['Champion'][2]['abilities']['Ability'][2]['description'])
+        elif abiln == (chfile['Champion'][2]['abilities']['Ability'][3]['name']):
+            print(chfile['Champion'][2]['abilities']['Ability'][3]['description'])
+        elif abiln == (chfile['Champion'][2]['abilities']['Ability'][4]['name']):
+            print(chfile['Champion'][2]['abilities']['Ability'][4]['description'])
+
+    print("Presione una tecla para continuar...")
+    msvcrt.getch()
+    os.system('cls')
