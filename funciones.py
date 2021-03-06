@@ -14,3 +14,13 @@ def listinfo(chfile):
     print("Presione una tecla para continuar...")
     msvcrt.getch()
     os.system('cls')
+
+def countinfo(chfile):
+
+    contch = len(chfile['Champion'])
+
+    print(f'En el fichero se encuentran un total de: {contch} champions')
+
+    print("Presione una tecla para continuar...")
+    msvcrt.getch()
+    os.system('cls')
