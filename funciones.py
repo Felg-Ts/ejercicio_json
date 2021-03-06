@@ -54,3 +54,53 @@ def searhinfo(chfile):
     print("Presione una tecla para continuar...")
     msvcrt.getch()
     os.system('cls')
+
+def searhinfore(chfile):
+
+    print('''
+    1-Illumination
+    2-Light Binding
+    3-Prismatic Barrier
+    4-Lucent Singularity
+    5-Final Spark
+    6-Consecration
+    7-Starcall
+    8-Astral Blessing
+    9-Infuse
+    10-Wish
+    11-Double Strike
+    12-Alpha Strike
+    13-Meditate
+    14-Wuju Style
+    15-Highlander
+    ''')
+
+    ctags = input("Introduce el nombre de una habilidad: ")
+
+    #habilidades Lux
+    if ctags == 'Illumination' or ctags == 'Light Binding':
+        print(f'La habilidad {ctags} pertenece a:' ,chfile['Champion'][0]['name'])
+    elif ctags == 'Prismatic Barrier' or ctags == 'Lucent Singularity':
+        print(f'La habilidad {ctags} pertenece a:' ,chfile['Champion'][0]['name'])
+    elif ctags == 'Final Spark':
+        print(f'La habilidad {ctags} pertenece a:' ,chfile['Champion'][0]['name'])
+
+    #habilidades Soraka
+    elif ctags == 'Consecration' or ctags == 'Starcall':
+        print(f'La habilidad {ctags} pertenece a:' ,chfile['Champion'][1]['name'])
+    elif ctags == 'Astral Blessing' or ctags == 'Infuse':
+        print(f'La habilidad {ctags} pertenece a:' ,chfile['Champion'][1]['name'])
+    elif ctags == 'Wish':
+        print(f'La habilidad {ctags} pertenece a:' ,chfile['Champion'][1]['name'])
+
+    #habilidades Master yi
+    elif ctags == 'Double Strike' or ctags == 'Alpha Strike':
+        print(f'La habilidad {ctags} pertenece a:' ,chfile['Champion'][2]['name'])
+    elif ctags == 'Meditate' or ctags == 'Wuju Style':
+        print(f'La habilidad {ctags} pertenece a:' ,chfile['Champion'][2]['name'])
+    elif ctags == 'Highlander':
+        print(f'La habilidad {ctags} pertenece a:' ,chfile['Champion'][2]['name'])
+
+    print("Presione una tecla para continuar...")
+    msvcrt.getch()
+    os.system('cls')
