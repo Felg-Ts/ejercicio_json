@@ -13,7 +13,7 @@ def listinfo(chfile):
     
     print("Presione una tecla para continuar...")
     msvcrt.getch()
-    os.system('cls')
+    os.system('clear')
 
 def countinfo(chfile):
 
@@ -23,7 +23,7 @@ def countinfo(chfile):
 
     print("Presione una tecla para continuar...")
     msvcrt.getch()
-    os.system('cls')
+    os.system('clear')
 
 def searhinfo(chfile):
 
@@ -53,7 +53,7 @@ def searhinfo(chfile):
     
     print("Presione una tecla para continuar...")
     msvcrt.getch()
-    os.system('cls')
+    os.system('clear')
 
 def searhinfore(chfile):
 
@@ -103,7 +103,7 @@ def searhinfore(chfile):
 
     print("Presione una tecla para continuar...")
     msvcrt.getch()
-    os.system('cls')
+    os.system('clear')
 
 def searhichamabil(chfile):
 
@@ -194,4 +194,4 @@ def searhichamabil(chfile):
 
     print("Presione una tecla para continuar...")
     msvcrt.getch()
-    os.system('cls')
+    os.system('clear')
