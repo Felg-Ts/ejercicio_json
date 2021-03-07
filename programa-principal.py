@@ -1,6 +1,6 @@
 import json
 import funciones
-opción = "11"
+opción = "1"
 
 chfile = json.loads(open('champions.json').read())
 
