@@ -38,17 +38,17 @@ def searhinfo(chfile):
 
     ctags = input("Introduce el nombre de una tag: ")
 
-    if ctags == '1':
+    if ctags == 'mage':
         print('Los champions que contienen la tag mage son:' ,chfile['Champion'][0]['name'])
-    elif ctags == '2':
+    elif ctags == 'support':
         print('Los champions que contienen la tag support son:' ,chfile['Champion'][0]['name'] ,chfile['Champion'][1]['name'])
-    elif ctags == '3':
+    elif ctags == 'ranged':
         print('Los champions que contienen la tag ranged son:' ,chfile['Champion'][0]['name'] ,chfile['Champion'][1]['name'] )
-    elif ctags == '4':
+    elif ctags == 'recomended':
         print('Los champions que contienen la tag recomended son:' ,chfile['Champion'][1]['name'] ,chfile['Champion'][2]['name'])
-    elif ctags == '5':
+    elif ctags == 'carry':
         print('Los champions que contienen la tag carry son:' ,chfile['Champion'][2]['name'])
-    elif ctags == '6':
+    elif ctags == 'melle':
         print('Los champions que contienen la tag melee son:' ,chfile['Champion'][2]['name'])
     
     print("Presione una tecla para continuar...")
